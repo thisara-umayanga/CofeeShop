@@ -12,20 +12,21 @@
     <!--Navbar-->
     <header>
         <a href="#" class="logo">
-            <img src="img (1)/img/logo.png" alt="" style="width: 60px; height: 60px;">
+    <img src="img (1)/img/logo.png" alt="" style="width: 60px; height: 60px;">
+</a>
 
-    </a>
     
     <!--Menu Icon-->
     <i class='bx bx-menu' id="menu-icon"></i> 
     <!--Links-->
     <ul class="navbar">
-        <li><a href="#home">Home </a></li>
-        
-    
-        <li><a href="#aboutus">About us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#customer">Customer</a></li>
+       <ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#customers">Customer</a></li>
+</ul>
+
     </ul>
     <!--Icons-->
     <div class="header-icon"> 
@@ -43,7 +44,7 @@
 <!--Home-->
 <section class="home" id="home">
     <div class="home-text">
-        <h1>Start your day<br>with  cofee</h1>
+        <h1>Start your day 1 dsf<br>with  cofee</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, explicabo? Soluta, quo excepturi quas minima sint dignissimos, aliquam ducimus reprehenderit ad fugiat animi eius earum perferendis id cum maxime quam.</p>
         <a href="#" class="btn">Shop Now</a>
     </div>
@@ -55,7 +56,8 @@
 </section>
 
 <!--About-->
-<section class="about" id="about">
+<section class="about" id="aboutus">
+
     <div class="about-img">
     <img src="img (1)\img\about.jpg" alt="">
 </div>
@@ -138,7 +140,8 @@
 </section>
 
 <!--Customer-->
-<section class="customers" id="customers">
+<section class="customers" id="customer">
+
     <div class="heading">
         <h2>Our Customer's</h2>
 
@@ -241,5 +244,13 @@
 
 
 <script src="script.js"></script> 
+
+<script>
+    let navbar = document.querySelector('.navbar');
+    document.querySelector('#menu-icon').onclick = () => {
+        navbar.classList.toggle('active');
+    }
+</script>
+
 </body>
 </html>
